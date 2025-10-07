@@ -1,4 +1,0 @@
-Invoking command in '/home/antonio/ros2/build/kryson': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antonio/ros2/build/kryson -- -j8 -l8
-Invoked command in '/home/antonio/ros2/build/kryson' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antonio/ros2/build/kryson -- -j8 -l8
-Invoking command in '/home/antonio/ros2/build/kryson': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antonio/ros2/build/kryson
-Invoked command in '/home/antonio/ros2/build/kryson' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antonio/ros2/build/kryson
