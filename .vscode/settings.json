@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "/home/antonio/ros2/src/kryson",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang-18"
+}

@@ -1,0 +1,40 @@
+[0.004s] Invoking command in '/home/antonio/ros2/build/kryson': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antonio/ros2/build/kryson -- -j8 -l8
+[0.016s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.096s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.107s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.111s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.115s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.120s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.141s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.142s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.167s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.189s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.230s] -- Configuring done (0.2s)
+[0.235s] -- Generating done (0.0s)
+[0.237s] -- Build files have been written to: /home/antonio/ros2/build/kryson
+[0.252s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_lambda_function.cpp.o[0m
+[0.256s] [ 75%] Built target talker
+[2.615s] [100%] [32m[1mLinking CXX executable listener[0m
+[2.723s] [100%] Built target listener
+[2.728s] Invoked command in '/home/antonio/ros2/build/kryson' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antonio/ros2/build/kryson -- -j8 -l8
+[2.733s] Invoking command in '/home/antonio/ros2/build/kryson': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antonio/ros2/build/kryson
+[2.736s] -- Install configuration: ""
+[2.736s] -- Up-to-date: /home/antonio/ros2/install/kryson/lib/kryson/talker
+[2.737s] -- Installing: /home/antonio/ros2/install/kryson/lib/kryson/listener
+[2.738s] -- Set non-toolchain portion of runtime path of "/home/antonio/ros2/install/kryson/lib/kryson/listener" to ""
+[2.738s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/ament_index/resource_index/package_run_dependencies/kryson
+[2.738s] -- Installing: /home/antonio/ros2/install/kryson/share/ament_index/resource_index/parent_prefix_path/kryson
+[2.738s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/environment/ament_prefix_path.sh
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/environment/ament_prefix_path.dsv
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/environment/path.sh
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/environment/path.dsv
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/local_setup.bash
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/local_setup.sh
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/local_setup.zsh
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/local_setup.dsv
+[2.739s] -- Installing: /home/antonio/ros2/install/kryson/share/kryson/package.dsv
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/ament_index/resource_index/packages/kryson
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/cmake/krysonConfig.cmake
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/cmake/krysonConfig-version.cmake
+[2.739s] -- Up-to-date: /home/antonio/ros2/install/kryson/share/kryson/package.xml
+[2.740s] Invoked command in '/home/antonio/ros2/build/kryson' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antonio/ros2/build/kryson
