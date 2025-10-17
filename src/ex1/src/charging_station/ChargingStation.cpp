@@ -46,7 +46,7 @@ private:
   {
     // Display received robot information
     RCLCPP_INFO(this->get_logger(), 
-                "\n📡 Received Robot Status:\n"
+                "\nReceived Robot Status:\n"
                 "   Status: %s\n"
                 "   State: %s\n"
                 "   Location: %s (ID: %ld)\n"
