@@ -12,15 +12,15 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(custom_msg REQUIRED)
 
 #Publisher
 add_executable(talker src/MinimalPublisher.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
+ament_target_dependencies(talker rclcpp custom_msg)
 
 #Subscriber
 add_executable(listener src/subscriber_lambda_function.cpp)
-ament_target_dependencies(listener rclcpp std_msgs)
+ament_target_dependencies(listener rclcpp custom_msg)
 
 install(TARGETS
   talker
