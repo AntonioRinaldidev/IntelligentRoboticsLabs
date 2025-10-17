@@ -1,6 +1,7 @@
 build/**
 .vscode/**
 install/**
+log/** 
 src/log/**
 src/**/build/**
 src/**/install/**
