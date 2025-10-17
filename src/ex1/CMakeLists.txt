@@ -23,21 +23,29 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES std_msgs
 )
 
+# Get typesupport target (needed for custom messages)
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 # Eseguibile Robot (Publisher)
 add_executable(robot src/robot/Robot.cpp)
 ament_target_dependencies(robot rclcpp std_msgs)
-rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(robot "${cpp_typesupport_target}")
 
-# Eseguibile Charging Station (Subscriber) - decommentare quando lo crei
+# Eseguibile Charging Station (Subscriber)
 add_executable(charging_station src/charging_station/ChargingStation.cpp)
 ament_target_dependencies(charging_station rclcpp std_msgs)
-rosidl_target_interfaces(charging_station ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(charging_station "${cpp_typesupport_target}")
 
 # Installa gli eseguibili
 install(TARGETS
   robot
   charging_station
   DESTINATION lib/${PROJECT_NAME})
+
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 ament_package()
