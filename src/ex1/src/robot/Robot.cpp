@@ -42,7 +42,7 @@ public:
     };
     
     // Create publisher for robot status
-    publisher_ = this->create_publisher<msg::RobotInfo>("/robot_status", 10);
+    publisher_ = this->create_publisher<msg::RobotInfo>("/charge_status", 10);
 
     // Set robot status to ONLINE
     status_ = RobotStatus::ONLINE;

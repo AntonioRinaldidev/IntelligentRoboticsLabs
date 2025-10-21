@@ -23,7 +23,7 @@ public:
   {
     // Create subscription to robot status topic
     subscription_ = this->create_subscription<ex1::msg::RobotInfo>(
-      "/robot_status", 
+      "/charge_status", 
       10,
       [this](const ex1::msg::RobotInfo::SharedPtr msg) {
         this->robot_status_callback(msg);
