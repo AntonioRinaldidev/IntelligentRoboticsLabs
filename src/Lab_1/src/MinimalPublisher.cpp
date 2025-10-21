@@ -3,7 +3,7 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
+#include "custom_msg/msg/num.hpp"
 
 using namespace std::chrono_literals;
 
@@ -23,20 +23,20 @@ public:
     //*Initialization of the publisher with a String messagae type
     //*Topic name
     //*Required queue size
-    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+    publisher_ = this->create_publisher<custom_msg::msg::Num>("topic", 10);
     
     //* Lambda Function declaration
     auto timer_callback =
 
-    //* Camptures by refence of the current object, No params and return void 
+    //* Captures by refence of the current object, No params and return void 
       [this]() -> void {
 
         //Create a new message of type String, sets its data with the desired string and publishes it
-        auto message = std_msgs::msg::String();
-        message.data = "Hello, world! " + std::to_string(this->count_++);
+        auto message = custom_msg::msg::Num();
+        message.num = this->count_++;
         
         //* ensures every published message is printed to the console
-        RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+        RCLCPP_INFO(this->get_logger(), "Publishing: '%ld'",message.num);
         this->publisher_->publish(message);
       };
 
@@ -47,7 +47,7 @@ public:
 private:
 //* declaration of the timer, publisher, and counter fields
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+  rclcpp::Publisher<custom_msg::msg::Num>::SharedPtr publisher_;
   size_t count_;
 };
 
